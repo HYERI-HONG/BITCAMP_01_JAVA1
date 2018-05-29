@@ -16,12 +16,9 @@ public class HowMuch{
 		System.out.print("주인 : 총 금액은 "+sum+"원 입니다.\n손님 : 비싸요, 깎아주세요!\n주인 : 몇 퍼센트 DC해드릴까요?\n퍼센트 : ");
 		double percent = scan.nextDouble();
 
-		String result="";
+		String result="주인 : 안 팔아요!\n";
 
-		if(percent>=10){
-			result = "주인 : 안 팔아요!\n";
-		}
-		else{
+		if(percent<10){
 			sum *=1.0 -(percent / 100.0);
 			result = "주인 : "+sum +"원 입니다.\n";
 		}
