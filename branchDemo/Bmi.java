@@ -13,7 +13,7 @@ public class Bmi{
 		Double height = scan.nextDouble();
 		height /= 100;
 
-		double result = weight/Math.pow(height,2);
+		double result = weight/(height*height);
 		String state ="";
 
 		if(result<18.5){
