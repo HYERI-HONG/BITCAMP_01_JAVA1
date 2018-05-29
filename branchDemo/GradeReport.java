@@ -14,10 +14,9 @@ public class GradeReport{
 		int math = scan.nextInt();
 
 		int ave = (korean + english + math)/3;
-		int check = ave/10;
 		String grade = "";
 
-		switch(check){
+		switch(ave/10){
 			case 10 :
 			case 9 :
 				grade = "A";
@@ -39,6 +38,5 @@ public class GradeReport{
 				break;
 		} 
 		System.out.print(name + "의 평균은 " + ave + " 학점은 "+grade);
-
 	}
 }
