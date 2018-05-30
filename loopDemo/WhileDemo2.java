@@ -12,10 +12,10 @@ public class WhileDemo2{
 		System.out.print("종료값을 입력하세요 : ");
 		int endNum = scan.nextInt();
 
-		if(endNum < strNum){
+		if(endNum < strNum){ //스왑정렬
 			tmp = endNum;
 			endNum = strNum;
-			strNum= tmp;
+			strNum = tmp;
 		}
 
 		while(strNum<(endNum+1)){
